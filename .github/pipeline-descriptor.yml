@@ -2,10 +2,6 @@ github:
   username: ${{ github.actor }}
   token:    ${{ secrets.SSLCNB_GITHUB_TOKEN }}
 
-#codeowners:
-#  - path:  "*"
-#    owner: "@micahyoung"
-
 package:
   repository:     "ghcr.io/${{ github.actor }}/${{ github.repository }}"
 
