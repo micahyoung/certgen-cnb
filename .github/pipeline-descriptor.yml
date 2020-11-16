@@ -1,0 +1,15 @@
+github:
+  username: ${{ github.actor }}
+  token:    ${{ secrets.SSLCNB_GITHUB_TOKEN }}
+
+#codeowners:
+#  - path:  "*"
+#    owner: "@micahyoung"
+
+package:
+  repository:     "ghcr.io/${{ github.actor }}/ssl-cnb"
+
+docker_credentials:
+  - registry: ghcr.io
+    username: ${{ github.actor }}
+    password: ${{ secrets.SSLCNB_GITHUB_TOKEN }}
