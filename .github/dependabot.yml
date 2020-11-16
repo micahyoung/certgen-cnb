@@ -7,3 +7,10 @@ updates:
       labels:
         - semver:patch
         - type:dependency-upgrade
+    - package-ecosystem: gomod
+      directory: /
+      schedule:
+        interval: daily
+      labels:
+        - semver:patch
+        - type:dependency-upgrade
