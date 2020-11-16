@@ -137,7 +137,7 @@ jobs:
                     --config "${HOME}"/package.toml
                 fi
               env:
-                PACKAGE: ghcr.io/${{ github.actor }}/ssl-cnb
+                PACKAGE: ghcr.io/${{ github.actor }}/${{ github.repository }}
                 PUBLISH: "true"
                 VERSION: ${{ steps.version.outputs.version }}
             - name: Update release with digest
