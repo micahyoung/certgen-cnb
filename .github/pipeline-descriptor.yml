@@ -7,7 +7,7 @@ github:
 #    owner: "@micahyoung"
 
 package:
-  repository:     "ghcr.io/${{ github.actor }}/ssl-cnb"
+  repository:     "ghcr.io/${{ github.actor }}/${{ github.repository }}"
 
 docker_credentials:
   - registry: ghcr.io
