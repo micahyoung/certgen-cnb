@@ -1,0 +1,17 @@
+api = "0.4"
+
+[buildpack]
+id       = "micahyoung/certgen-cnb"
+name     = "TLS Cert Generator buildpack"
+version  = "{{.version}}"
+homepage = "https://github.com/micahyoung/certgen-cnb"
+
+[metadata]
+pre-package   = "scripts/build.sh"
+include-files = [
+    "README.md",
+    "bin/build",
+    "bin/detect",
+    "bin/main",
+    "buildpack.toml",
+]
